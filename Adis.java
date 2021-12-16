@@ -8,7 +8,7 @@ public class Adis {
 		String [] Questions1 = new String [10];
 		String [] Rights1 = new String [10];
 		String [] Wrongs1 = new String [10];
-		int j =0;
+		int j = 0;
 		String file = "src//ADIS.part1.csv";
 		BufferedReader reader = null;
 		String line = "";
@@ -42,4 +42,23 @@ public class Adis {
 							
 		}
 	}
+	
+	public String getQ1SimpleStage1(int v) {
+		
+		return Questions1[v];
+		
+	}
+
+	public String getR1SimpleStage1(int v) {
+		
+		return Rights[v];
+		
+	}
+	
+	public String getW1SimpleStage1(int v) {
+	
+		return Wrongs[v];
+	
+	}
+	
 }
