@@ -1,16 +1,15 @@
-import java.io.BufferedReader;
-import java.io.FileReader;
+import java.io.*;
 
-public class Persefoni {
+public class Adis {
 
 	String [] Questions1 = new String [10];
 	String [] Rights1 = new String [10];
 	String [] Wrongs1 = new String [10];
-	public Persefoni() {
-
+	public Adis() {
+		
 		String [] Insert1 = new String [3];
-		int j =0;
-		String file = "src//PERSEFONI.part1.csv";
+		int j = 0;
+		String file = "src//ADIS.part1.csv";
 		BufferedReader reader = null;
 		String line = "";
 		try {
@@ -43,7 +42,7 @@ public class Persefoni {
 							
 		}
 	}
-
+	
 	public String[] getQ1Stage1() {
 		
 		return Questions1;
@@ -61,4 +60,5 @@ public class Persefoni {
 		return Wrongs1;
 	
 	}
+	
 }

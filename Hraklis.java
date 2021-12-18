@@ -2,12 +2,12 @@ import java.io.*;
 
 public class Hraklis {
 
-	public static void main (String[] args) {
+	String [] Questions1 = new String [10];
+	String [] Rights1 = new String [10];
+	String [] Wrongs1 = new String [10];
+	public Hraklis() {
 		
 		String [] Insert1 = new String [3];
-		String [] Questions1 = new String [10];
-		String [] Rights1 = new String [10];
-		String [] Wrongs1 = new String [10];
 		int j =0;
 		String file = "src//HRAKLIS.part1.csv";
 		BufferedReader reader = null;
@@ -41,5 +41,23 @@ public class Hraklis {
 			}
 							
 		}
+	}
+
+	public String[] getQ1Stage1() {
+		
+		return Questions1;
+		
+	}
+
+	public String[] getR1Stage1() {
+		
+		return Rights1;
+		
+	}
+	
+	public String[] getW1Stage1() {
+	
+		return Wrongs1;
+	
 	}
 }

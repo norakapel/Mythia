@@ -1,16 +1,15 @@
-import java.io.BufferedReader;
-import java.io.FileReader;
+import java.io.*;
 
-public class Persefoni {
+public class Dias {
 
 	String [] Questions1 = new String [10];
 	String [] Rights1 = new String [10];
 	String [] Wrongs1 = new String [10];
-	public Persefoni() {
-
+	public Dias(){
+		
 		String [] Insert1 = new String [3];
 		int j =0;
-		String file = "src//PERSEFONI.part1.csv";
+		String file = "src//DIAS.part1.csv";
 		BufferedReader reader = null;
 		String line = "";
 		try {

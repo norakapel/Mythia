@@ -5,10 +5,10 @@ public class Mythia {
 
 	public static void main(String[] args) {
 		
+		Playerselection sel = new Playerselection();
 		Info three = new Info();
 		Leaderboard two = new Leaderboard();
 		Single one1 = new Single();
-		Multi one2 = new Multi();
 		Scanner n = new Scanner(System.in);
 		int k;
 		do {
@@ -27,11 +27,15 @@ public class Mythia {
 				l = n.nextInt();
 				if(l == 1) {
 					
-					one1.soloPlay();
+					int p1 =sel.cplayer();
+					one1.soloPlay(p1);
 					
 				}else {
 					
-					one2.doublePlay();
+					int p1 =sel.cplayer();
+					int p2 =sel.cplayer();
+					MultiStage1 one2 = new MultiStage1(p1, p2);
+					one2.stageOneMulti();
 					
 				}
 			}else if(k == 2) {
