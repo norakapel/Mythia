@@ -49,7 +49,7 @@ public class MultiStage1 {
 			do {
 				nxt = rand.nextInt(10);
 				for (int w=0;w<5;w++) {
-					if (nxt != Previous1[w]) {
+					if (nxt != Previous2[w]) {
 						b = true;
 					}
 				}

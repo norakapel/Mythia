@@ -8,7 +8,6 @@ public class Mythia {
 		Playerselection sel = new Playerselection();
 		Info three = new Info();
 		Leaderboard two = new Leaderboard();
-		Single one1 = new Single();
 		Scanner n = new Scanner(System.in);
 		int k;
 		do {
@@ -28,7 +27,8 @@ public class Mythia {
 				if(l == 1) {
 					
 					int p1 =sel.cplayer();
-					one1.soloPlay(p1);
+					SingleStage1 one1 = new SingleStage1(p1);
+					one1.stageOneSingle();
 					
 				}else {
 					
