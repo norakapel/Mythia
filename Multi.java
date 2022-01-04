@@ -11,8 +11,8 @@ public class Multi {
 	String [] Questions1_2 = new String [10];
 	String [] Rights1_2 = new String [10];
 	String [] Wrongs1_2 = new String [10];
-	public Multi(int k, int l) {
-		
+	public void Multiplayer(int k, int l) {
+
 		if(k == 1) {
 			Eleni player1 = new Eleni();
 			Questions1_1 =player1.getQ1Stage1();
@@ -48,7 +48,7 @@ public class Multi {
 			Questions1_1 =player1.getQ1Stage1();
 			Rights1_1 =player1.getR1Stage1();
 			Wrongs1_1 = player1.getW1Stage1();
-		} else if(k == 8) { 
+		} else if(k == 8) {
 			Dias player1 = new Dias();
 			Questions1_1 =player1.getQ1Stage1();
 			Rights1_1 =player1.getR1Stage1();
@@ -64,7 +64,7 @@ public class Multi {
 			Rights1_1 =player1.getR1Stage1();
 			Wrongs1_1 = player1.getW1Stage1();
 		}
-		
+
 		if(l == 1) {
 			Eleni player2 = new Eleni();
 			Questions1_2 =player2.getQ1Stage1();
@@ -100,7 +100,7 @@ public class Multi {
 			Questions1_2 =player2.getQ1Stage1();
 			Rights1_2 =player2.getR1Stage1();
 			Wrongs1_2 = player2.getW1Stage1();
-		} else if(l == 8) { 
+		} else if(l == 8) {
 			Dias player2 = new Dias();
 			Questions1_2 =player2.getQ1Stage1();
 			Rights1_2 =player2.getR1Stage1();
@@ -116,7 +116,9 @@ public class Multi {
 			Rights1_2 =player2.getR1Stage1();
 			Wrongs1_2 = player2.getW1Stage1();
 		}
-		
+		System.out.println(k);
+		System.out.println(l);
+
 	}
 
 }
