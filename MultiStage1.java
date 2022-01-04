@@ -5,17 +5,17 @@ public class MultiStage1 {
 
     int m;
     int n;
-    
+
 	public MultiStage1(int k, int l) {
-	
+
 		m=k;
 		n=l;
-		
+
 	}
 
 	public void stageOneMulti() {
-		
-		Multi characters =new Multi(m,n);
+
+		Multi characters = new Multi(m,n);
 		int a1;
 		int a2;
 		Scanner i = new Scanner(System.in);
@@ -65,7 +65,7 @@ public class MultiStage1 {
 			}
 			System.out.println("YOUR POINTS SO FAR:" + characters.Points2);
 		}
-		
+
 	}
 
 }
