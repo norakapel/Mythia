@@ -9,7 +9,7 @@ public class Hraklis {
 
 		String [] Insert1 = new String [3];
 		int j =0;
-		String file = "hhufu.csv";
+		String file = "Adis.part1.csv";
 		BufferedReader reader = null;
 		String line = "";
 		try {
