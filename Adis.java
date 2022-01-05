@@ -9,7 +9,7 @@ public class Adis {
 		
 		String [] Insert1 = new String [3];
 		int j = 0;
-		String file = "src//ADIS.part1.csv";
+		String file = "ADIS.part1.csv";
 		BufferedReader reader = null;
 		String line = "";
 		try {
@@ -38,8 +38,7 @@ public class Adis {
 				reader.close();
 			}catch(Exception e) {
 				e.printStackTrace();
-			}
-							
+			}					
 		}
 	}
 	

@@ -9,7 +9,7 @@ public class Thiseas {
 
 		String [] Insert1 = new String [3];
 		int j =0;
-		String file = "src//THISEAS.part1.csv";
+		String file = "THISEAS.part1.csv";
 		BufferedReader reader = null;
 		String line = "";
 		try {

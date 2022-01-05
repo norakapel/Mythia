@@ -9,7 +9,7 @@ public class Hra {
 		
 		String [] Insert1 = new String [3];
 		int j =0;
-		String file = "src//HRA.part1.csv";
+		String file = "HRA.part1.csv";
 		BufferedReader reader = null;
 		String line = "";
 		try {

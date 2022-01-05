@@ -9,7 +9,7 @@ public class Poseidwnas {
 		
 		String [] Insert1 = new String [3];
 		int j =0;
-		String file = "src//POSEIDWNAS.part1.csv";
+		String file = "POSEIDWNAS.part1.csv";
 		BufferedReader reader = null;
 		String line = "";
 		try {

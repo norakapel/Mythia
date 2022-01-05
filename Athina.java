@@ -9,7 +9,7 @@ public class Athina {
 		
 		String [] Insert1 = new String [3];
 		int j =0;
-		String file = "src//ATHINA.part1.csv";
+		String file = "ATHINA.part1.csv";
 		BufferedReader reader = null;
 		String line = "";
 		try {
