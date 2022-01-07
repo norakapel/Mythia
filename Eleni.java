@@ -7,20 +7,20 @@ public class Eleni {
 	String [] Rights1 = new String [10];
 	String [] Wrongs1 = new String [10];
 	public Eleni() {
-		
+
 		String [] Insert1 = new String [3];
 		int j =0;
-		String file = "src//ELENI.part1.csv";
+		String file = "ELENI.part1.csv";
 		BufferedReader reader = null;
 		String line = "";
 		try {
 			reader = new BufferedReader(new FileReader(file));
 			while ((line = reader.readLine()) != null) {
-				
+
 				int k =0;
 				String[] row = line.split(",");
 				for (String index : row ) {
-					
+
 					Insert1[k] =index ;
 					k++;
 				}
@@ -31,35 +31,35 @@ public class Eleni {
 				j++;
 			}
 		}catch(Exception e){
-			
+
 			e.printStackTrace();
-			
+
 		}finally {
 			try {
 				reader.close();
 			}catch(Exception e) {
 				e.printStackTrace();
 			}
-							
+
 		}
 	}
-	
+
 	public String[] getQ1Stage1() {
-		
+
 		return Questions1;
-		
+
 	}
 
 	public String[] getR1Stage1() {
-		
+
 		return Rights1;
-		
+
 	}
-	
+
 	public String[] getW1Stage1() {
-	
+
 		return Wrongs1;
-	
+
 	}
 
 }

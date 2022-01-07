@@ -4,16 +4,16 @@ import java.util.Scanner;
 public class SingleStage1 {
 
 	int m;
-	
+
 	public SingleStage1(int k) {
-		
+
 		m=k;
-		
+
 	}
-	
+
 	public void stageOneSingle() {
-		
-		Single characters =new Single(m);
+
+		Single characters = new Single(m);
 		int a1;
 		Scanner i = new Scanner(System.in);
 		Random rand = new Random();
@@ -43,7 +43,7 @@ public class SingleStage1 {
 		}
 	}
 }
-			
-			
-			
-			
+
+
+
+

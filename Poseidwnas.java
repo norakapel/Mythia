@@ -6,22 +6,24 @@ public class Poseidwnas {
 	String [] Rights1 = new String [10];
 	String [] Wrongs1 = new String [10];
 	public Poseidwnas(){
-		
+		System.out.println(45);
 		String [] Insert1 = new String [3];
 		int j =0;
-		String file = "src//POSEIDWNAS.part1.csv";
+		String file = "POSEIDWNAS.part1.csv";
 		BufferedReader reader = null;
 		String line = "";
 		try {
 			reader = new BufferedReader(new FileReader(file));
 			while ((line = reader.readLine()) != null) {
-				
+
 				int k =0;
 				String[] row = line.split(",");
 				for (String index : row ) {
-					
-					Insert1[k] =index ;
+
+					Insert1[k] = index ;
+					System.out.println(Insert1[k]);
 					k++;
+
 				}
 
 				Questions1[j] = Insert1[0];
@@ -30,34 +32,35 @@ public class Poseidwnas {
 				j++;
 			}
 		}catch(Exception e){
-			
+
 			e.printStackTrace();
-			
+
 		}finally {
 			try {
 				reader.close();
 			}catch(Exception e) {
 				e.printStackTrace();
 			}
-							
+
 		}
+
 	}
 
 	public String[] getQ1Stage1() {
-		
+
 		return Questions1;
-		
+
 	}
 
 	public String[] getR1Stage1() {
-		
+
 		return Rights1;
-		
+
 	}
-	
+
 	public String[] getW1Stage1() {
-	
+
 		return Wrongs1;
-	
+
 	}
 }

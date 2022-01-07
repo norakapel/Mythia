@@ -9,17 +9,17 @@ public class Thiseas {
 
 		String [] Insert1 = new String [3];
 		int j =0;
-		String file = "src//THISEAS.part1.csv";
+		String file = "THISEAS.part1.csv";
 		BufferedReader reader = null;
 		String line = "";
 		try {
 			reader = new BufferedReader(new FileReader(file));
 			while ((line = reader.readLine()) != null) {
-				
+
 				int k =0;
 				String[] row = line.split(",");
 				for (String index : row ) {
-					
+
 					Insert1[k] =index ;
 					k++;
 				}
@@ -30,35 +30,35 @@ public class Thiseas {
 				j++;
 			}
 		}catch(Exception e){
-			
+
 			e.printStackTrace();
-			
+
 		}finally {
 			try {
 				reader.close();
 			}catch(Exception e) {
 				e.printStackTrace();
 			}
-							
+
 		}
 	}
 
 
 	public String[] getQ1Stage1() {
-		
+
 		return Questions1;
-		
+
 	}
 
 	public String[] getR1Stage1() {
-		
+
 		return Rights1;
-		
+
 	}
-	
+
 	public String[] getW1Stage1() {
-	
+
 		return Wrongs1;
-	
+
 	}
 }
