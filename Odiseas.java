@@ -1,11 +1,15 @@
 import java.io.BufferedReader;
 import java.io.FileReader;
+import javax.swing.*;
 
 public class Odiseas {
 
+	ImageIcon card = new ImageIcon("OdysseusCard.png");
 	String [] Questions1 = new String [10];
 	String [] Rights1 = new String [10];
 	String [] Wrongs1 = new String [10];
+	String [] Mname = new String [] {"Polyphemus Punch", "Cyclops Tornado", "The Return"};
+	int [] Mdamage = new int [] { 20, 30, 30};
 	public Odiseas() {
 
 		String [] Insert1 = new String [3];
@@ -45,20 +49,26 @@ public class Odiseas {
 	}
 
 	public String[] getQ1Stage1() {
-
 		return Questions1;
-
 	}
 
 	public String[] getR1Stage1() {
-
 		return Rights1;
-
 	}
 
 	public String[] getW1Stage1() {
-
 		return Wrongs1;
+	}
 
+	public int[] getDamage() {
+		return Mdamage;
+	}
+
+	public String[] getMname() {
+		return Mname;
+	}
+
+	public ImageIcon getCard(){
+		return card;
 	}
 }
