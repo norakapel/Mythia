@@ -11,7 +11,7 @@ import java.awt.Color.*;
 public class ActionListenerTest implements ActionListener{
 	Dimension DimMax = Toolkit.getDefaultToolkit().getScreenSize();
 	ChooseCharacters c = new ChooseCharacters();
-	FinalStage fs = new FinalStage();
+	FinalStageMulti fs = new FinalStageMulti();
 	JFrame f1 = new JFrame();
 	JFrame f2 = new JFrame();
 	PreferedSettings pf = new PreferedSettings();
@@ -46,8 +46,7 @@ public class ActionListenerTest implements ActionListener{
 			f1.setVisible(false);
 			f2.setVisible(true);//making the frame visible
 		}else if (e.getActionCommand().equals("2. Leaderboard")){
-			fs.StageThree(3 , 3 , 20, 20);
-
+			fs.StageThreeMulti(3 , 7 , 20, 20);
 		}else if (e.getActionCommand().equals("3. Info")){
 			f1.setVisible(false);
 			JFrame f = new JFrame();
@@ -65,17 +64,52 @@ public class ActionListenerTest implements ActionListener{
 			f1.setVisible(true);
 			f2.setVisible(false);
 		}else if (e.getActionCommand().equals("1 vs 1")){
-			//int p1 = c.ChooseCharacters1();
-			//int p2 = c.ChooseCharacters1();
-			//System.out.println(p1);
-			//System.out.println(p2);
-			f1.setVisible(false);
-			f2.setVisible(false);
+			/*c.ChooseCharacters1();
+			int p1 = 0;
+			int p2=0;
+			new java.util.Timer().schedule(
+			new java.util.TimerTask(){
+							@Override
+							public void run(){
+								p1 = c.charnum;
+								c.f1.setVisible(false);
+								f1.setVisible(false);
+								f2.setVisible(false);
+
+							}
+			},5000);
+
+			f1.setVisible(true);
+			f2.setVisible(true);
+			c.ChooseCharacters1();
+
+						new java.util.Timer().schedule(
+						new java.util.TimerTask(){
+										@Override
+										public void run(){
+											p2 = c.charnum;
+											c.f1.setVisible(false);
+											f1.setVisible(false);
+											f2.setVisible(false);
+
+										}
+						},5000);
+						*/
+
 		}else if (e.getActionCommand().equals("solo")){
-			int i = c.ChooseCharacters1();
-			System.out.println(i);
-			f1.setVisible(false);
-			f2.setVisible(false);
+			c.ChooseCharacters1();
+			new java.util.Timer().schedule(
+				new java.util.TimerTask(){
+				@Override
+				public void run(){
+					int i = c.charnum;
+					c.f1.setVisible(false);
+					f1.setVisible(false);
+					f2.setVisible(false);
+					fs.StageThreeMulti(1, 9 , 20, 20);
+
+				}
+			},5000);
 		}else if (e.getActionCommand().equals("4. Exit")){
 			System.exit(0);//successfull termination of the game
 		}
