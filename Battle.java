@@ -1,6 +1,10 @@
 import java.util.Scanner;
 import java.util.Random;
+<<<<<<< HEAD
 //multiplayer
+=======
+
+>>>>>>> c0b1035c7fcc3e467089b5a06529d35bc0750e03
 public class Battle {
 
    public static void main (String [] args){
@@ -47,7 +51,11 @@ public class Battle {
 			pont2++;
 		}
 	}
+<<<<<<< HEAD
 	//zoes
+=======
+
+>>>>>>> c0b1035c7fcc3e467089b5a06529d35bc0750e03
 	double Z1=100;
 	double Z2=100;
 	int DH1=h.m1;
@@ -58,7 +66,10 @@ public class Battle {
 	int RT3=h.k3;
     int move1 = 0 ;
     int move2 = 0 ;
+<<<<<<< HEAD
     // pinakes string
+=======
+>>>>>>> c0b1035c7fcc3e467089b5a06529d35bc0750e03
     String M1=h.M1, M2=h.M2, M3=h.M3;
     String K1=h.K1, K2=h.K2, K3=h.K3;
     int r;

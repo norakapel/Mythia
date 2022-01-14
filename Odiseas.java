@@ -9,9 +9,13 @@ public class Odiseas {
 	String [] Rights1 = new String [10];
 	String [] Wrongs1 = new String [10];
 	String [] Mname = new String [] {"Polyphemus Punch", "Cyclops Tornado", "The Return"};
+<<<<<<< HEAD
 	int [] Mdamage = new int [] {20, 30, 30};
 	String [] Questions2 = new String [5];
 	String [] Answers = new String [5];
+=======
+	int [] Mdamage = new int [] { 20, 30, 30};
+>>>>>>> c0b1035c7fcc3e467089b5a06529d35bc0750e03
 	public Odiseas() {
 
 		String [] Insert1 = new String [3];
@@ -85,21 +89,27 @@ public class Odiseas {
 	}
 
 	public String[] getQ1Stage1() {
-
 		return Questions1;
-
 	}
 
 	public String[] getR1Stage1() {
-
 		return Rights1;
-
 	}
 
 	public String[] getW1Stage1() {
-
 		return Wrongs1;
+	}
 
+	public int[] getDamage() {
+		return Mdamage;
+	}
+
+	public String[] getMname() {
+		return Mname;
+	}
+
+	public ImageIcon getCard(){
+		return card;
 	}
 	public int[] getDamage() {
 		return Mdamage.clone();
