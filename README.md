@@ -3,7 +3,6 @@
 javac MythiaMainMenu.java
 
 και για run της εφαρμογής: java MythiaMainMenu
-(όχι απαραίτητο, διότι)
 
 Οδηγίες εκτέλεσης του προγράμματος:
 java -jar Mythia.jar
